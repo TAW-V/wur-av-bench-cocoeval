@@ -1,0 +1,27 @@
+.vscode
+build
+dist
+faster_coco_eval.egg-info
+*.pyc
+__pycache__
+examples/comparison/mmdet/COCO
+examples/comparison/mmdet/model
+csrc/mask/pycocotools/_mask.c
+tests/synth_test_dataset
+examples/ultralytics
+examples/comparison/ultralytics/runs/*
+examples/comparison/ultralytics/*.pt
+*.whl
+*.pyd
+tests/.coverage
+.coverage
+docs/source/examples/*.ipynb
+.ruff_cache
+.pytest_cache
+htmlcov
+examples/comparison/ultralytics/datasets/*
+examples/profile/baseline.prof
+*.so
+
+# local analysis scripts and figures, not part of the package
+local/

@@ -1,0 +1,50 @@
+[
+  {
+    "image_id": 1,
+    "category_id": 10000,
+    "segmentation": {
+      "size": [
+        100,
+        100
+      ],
+      "counts": "bo0:j200000000000000000fi7"
+    },
+    "score": 0.95
+  },
+  {
+    "image_id": 1,
+    "category_id": 10000,
+    "segmentation": {
+      "size": [
+        100,
+        100
+      ],
+      "counts": "\\m5:j200000000000000000lk2"
+    },
+    "score": 0.95
+  },
+  {
+    "image_id": 1,
+    "category_id": 10000,
+    "segmentation": {
+      "size": [
+        100,
+        100
+      ],
+      "counts": "i?3Q3000[o8"
+    },
+    "score": 0.4
+  },
+  {
+    "image_id": 1,
+    "category_id": 10000,
+    "segmentation": {
+      "size": [
+        100,
+        100
+      ],
+      "counts": "Xn3:j200000000000000000Pk4"
+    },
+    "score": 0.85
+  }
+]

@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "build",
+    # Force numpy higher than 2.0rc1, so that built wheels are compatible
+    # with both numpy 1 and 2
+    "numpy>=2.0.0rc1 ; python_version >= \"3.9\"",
+    "oldest-supported-numpy ; python_version < \"3.9\"",
+    "Cython",
+    "pybind11>=2.12.0, <3",
+]
+build-backend = "setuptools.build_meta"
+
+
+
+[tool.ruff]
+target-version = "py37"
+line-length = 120
+
+#[tool.ruff.pycodestyle]
+#ignore-overlong-task-comments = true
+format.preview = true
+lint.select = [
+  "E",
+  "F",  # see: https://pypi.org/project/pyflakes
+  "I",  #see: https://pypi.org/project/isort/
+  "UP", # see: https://docs.astral.sh/ruff/rules/#pyupgrade-up
+  "W",  # see: https://pypi.org/project/pycodestyle
+#  "D",  # see: https://pypi.org/project/pydocstyle
+]
+# Unlike Flake8, default to a complexity level of 10.
+lint.mccabe.max-complexity = 10
+# Use Google-style docstrings.
+lint.pydocstyle.convention = "google"
+exclude = ["examples"]
